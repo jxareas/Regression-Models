@@ -18,7 +18,7 @@ predictions = lm.predict()
 
 lm.summary()
 
-# %% Applying a t-test Difference in Mean as a Hypothesis Test
+# %% Applying a t-test for Difference in Means as a Hypothesis Test
 
 t_test = ttest_ind(
     a=df.query("female").score,

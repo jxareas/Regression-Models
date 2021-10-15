@@ -44,7 +44,8 @@ ggplot(data = df,
 ggplot(data = df,
        mapping = aes(x = post_test,
                      y = group, fill = group)) +
-        geom_jitter(col = "magenta") +
+        geom_jitter(col = "magenta", width = 0,
+                    height = 0.10) +
         stat_boxplot(geom = "errorbar") +
         geom_boxplot(col = "black", alpha = .8) +
         scale_x_continuous(breaks = seq(30, 60, by = 5)) +
